@@ -19,3 +19,9 @@ class Employee(models.Model):
 
     def __str__(self) -> str:
         return self.first_name
+
+class Contact(models.Model):
+    firstname = models.CharField(max_length=50)
+    lastname = models.CharField(max_length=50)
+    email = models.EmailField()
+    desc = models.CharField(max_length=250)

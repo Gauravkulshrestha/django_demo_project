@@ -2,22 +2,6 @@
 
 {% block title %}Home Page{% endblock title %}
 
-{% block body %} 
-
-<div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-      <div class="card">
-          {% for emp in allemp %}
-        <img src="media/{{emp.image}}" class="card-img-top" alt="empimg" height="250" weight="200">
-        <div class="card-body">
-          <h5 class="card-title">Name: {{emp.first_name}} {{emp.last_name}}</h5>
-          <h5 class="card-title">Age: {{emp.age}}</h5>
-          <h5 class="card-title">Gender: {{emp.gender}}</h5>
-        </div>
-      </div>
-      <br>
-      {% endfor %}      
-    </div>
-  </div>
-
+{% block body %}
+<h1>This is home page </h1>
 {% endblock body %}
