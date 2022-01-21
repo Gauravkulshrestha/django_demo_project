@@ -1,5 +1,3 @@
-from sre_constants import MAX_UNTIL
-from sys import maxsize
 from django.db import models
 
 # Create your models here.
